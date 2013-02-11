@@ -31,8 +31,8 @@
                     	<?php } ?>
 
 
-                    <h2><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a></h2>
-                    <?php the_excerpt(); ?>
+                    <h2><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></h2>
+                    <?php the_excerpt(); ?></a>
                     <div class="postmetadata">
                         <?php the_time(__('F jS, Y')) ?>&nbsp;&#721;&nbsp;
                         <?php printf(__('カテゴリー: %s'), get_the_category_list(', ')); ?>
@@ -54,8 +54,8 @@
             <?php if(have_posts()) : ?><?php while(have_posts()) : the_post(); ?>
             <?php endwhile; ?>
                 <div id="nav">
-                    <div id="navleft"><?php next_posts_link(__('Previous page&nbsp;')) ?></div>
-                    <div id="navright"><?php previous_posts_link(__('Next page&nbsp;')) ?></div>
+                    <div id="navleft"><?php next_posts_link(__('前回の記事&nbsp;')) ?></div>
+                    <div id="navright"><?php previous_posts_link(__('次の記事&nbsp;')) ?></div>
                 </div>
             <?php else : ?>
             <?php endif; ?>
