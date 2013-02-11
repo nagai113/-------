@@ -133,7 +133,7 @@ caption, th, td {font-weight:strong;text-align:left;}
 	margin-top:50px;
 }
 .pagetitle {
-	font-size:30px;
+	font-size:16px;
 	font-weight:normal;
 	padding:15px 10px;
 	border-bottom:solid 1px #e7e7e7;
@@ -299,7 +299,7 @@ caption, th, td {font-weight:strong;text-align:left;}
 	border-right:none;
 }
 #main-inner .article h1 {
-	font-size:30px;
+	font-size:20px;
 	font-weight:normal;
 }
 #main-inner .article .postmetadata {
