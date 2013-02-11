@@ -10,7 +10,7 @@ License: GNU/GPL Version 2 or later. http://www.gnu.org/licenses/gpl.html
 */
 a:link, a:visited {
 	color:#000;
-	text-decoration:underline;
+	text-decoration:none;
 }
 a:hover {
 	text-decoration:none;
