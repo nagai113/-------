@@ -4,11 +4,11 @@
                   <?php /* If this is a tag archive */ } elseif( is_tag() ) { ?>
                     <div class="pagetitle"><?php printf(__('Posts Tagged &#8216;%s&#8217;'), single_tag_title('', false) ); ?></div>
                   <?php /* If this is a daily archive */ } elseif (is_day()) { ?>
-                    <div class="pagetitle"><?php printf(_c('Archive for %s|Daily archive page'), get_the_time(__('F jS, Y'))); ?></div>
+                    <div class="pagetitle"><?php printf(_c('%s|Daily archive page'), get_the_time(__('F jS, Y'))); ?></div>
                   <?php /* If this is a monthly archive */ } elseif (is_month()) { ?>
-                    <div class="pagetitle"><?php printf(_c('Archive for %s|Monthly archive page'), get_the_time(__('F, Y'))); ?></div>
+                    <div class="pagetitle"><?php printf(_c('%s|Monthly archive page'), get_the_time(__('F, Y'))); ?></div>
                   <?php /* If this is a yearly archive */ } elseif (is_year()) { ?>
-                    <div class="pagetitle"><?php printf(_c('Archive for %s|Yearly archive page'), get_the_time(__('Y'))); ?></div>
+                    <div class="pagetitle"><?php printf(_c('%s|Yearly archive page'), get_the_time(__('Y'))); ?></div>
                   <?php /* If this is an author archive */ } elseif (is_author()) { ?>
                     <div class="pagetitle"><?php _e('Author Archive'); ?></div>
                   <?php /* If this is a paged archive */ } elseif (isset($_GET['paged']) && !empty($_GET['paged'])) { ?>
@@ -34,9 +34,8 @@
                     <h2><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a></h2>
                     <?php the_excerpt(); ?>
                     <div class="postmetadata">
-                        Posted: <?php the_time(__('F jS, Y')) ?>&nbsp;&#721;&nbsp;
-                        <?php comments_popup_link(__('No Comments'), __('1 Comment'), __('% Comments'), '', __('Comments Closed') ); ?><br />
-                        <?php printf(__('Filled under: %s'), get_the_category_list(', ')); ?>
+                        <?php the_time(__('F jS, Y')) ?>&nbsp;&#721;&nbsp;
+                        <?php printf(__('カテゴリー: %s'), get_the_category_list(', ')); ?>
                     </div>
                 </li>
 
