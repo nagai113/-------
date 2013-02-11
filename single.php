@@ -21,8 +21,8 @@
             <?php endwhile; ?>
             
                 <div id="nav">
-                    <div id="navleft"><?php previous_post_link('%link', 'Previous article'); ?></div>
-                    <div id="navright"><?php next_post_link('%link', 'Next article'); ?></div>
+                    <div id="navleft"><?php previous_post_link('%link', '前回の記事'); ?></div>
+                    <div id="navright"><?php next_post_link('%link', '次の記事'); ?></div>
                 </div>
                 
 <!--この行にコメントタグあった-->            
