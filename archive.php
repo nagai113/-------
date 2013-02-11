@@ -1,6 +1,6 @@
 <?php get_header(); ?> 
                   <?php /* If this is a category archive */ if (is_category()) { ?>
-                    <div class="pagetitle"><?php printf(__('Archive for the &#8216;%s&#8217; Category'), single_cat_title('', false)); ?></div>
+                    <div class="pagetitle"><?php printf(__('&#8216;%s&#8217;'), single_cat_title('', false)); ?></div>
                   <?php /* If this is a tag archive */ } elseif( is_tag() ) { ?>
                     <div class="pagetitle"><?php printf(__('Posts Tagged &#8216;%s&#8217;'), single_tag_title('', false) ); ?></div>
                   <?php /* If this is a daily archive */ } elseif (is_day()) { ?>
