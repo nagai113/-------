@@ -26,7 +26,7 @@ if ( function_exists( 'register_nav_menus' ) )
 	}
 function custom_menu(){
 	echo '<ul id="top-menu">';
-	$data = wp_list_categories('show_count=1&echo=0&title_li=<a href="#">Categories</a>');
+	$data = wp_list_categories('show_count=1&echo=0&title_li=<a href="#">カテゴリー</a>');
 	$data = preg_replace('/\<\/a\> \((.*)\)/',' <span>$1</span></a>',$data);
 	echo $data;
 	wp_list_pages('title_li=&');
