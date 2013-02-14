@@ -9,8 +9,7 @@
                       <h1><?php the_title(); ?></h1>
                       <br>
                       <div class="postmetadata">
-                          <?php the_time(__('F jS, Y')) ?>&nbsp;&#721;&nbsp;<?php printf(__('カテゴリー: %s'), get_the_category_list(', ')); ?>&nbsp;&#721;&nbsp;
-                          <!--<?php comments_popup_link(__('No Comments'), __('1 Comment'), __('% Comments'), '', __('Comments Closed') ); ?><?php edit_post_link(__('Edit this entry'), '&nbsp;&#721;&nbsp;', ''); ?>-->
+                          <?php the_time(__('Y年m月d日(D)')) ?>&nbsp;&nbsp;<?php printf(__('カテゴリー: %s'), get_the_category_list(', ')); ?>&nbsp;&#721;&nbsp;
                       </div>
                       <br>
                       <?php the_content(); ?>
