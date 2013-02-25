@@ -17,8 +17,8 @@
                     	<?php } ?>
                 
                 
-                    <h2><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php $title= mb_substr($post->post_title,0,15); echo $title; ?></h2>
-                    <?php echo mb_substr(get_the_excerpt(), 0, 50); ?></a>
+                    <h2><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></h2>
+                     <?php the_excerpt(); ?></a>
                     <div class="postmetadata">
                         <?php the_time(__('Y年m月d日(D)')) ?>&nbsp;&nbsp;
                     </div>
