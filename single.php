@@ -20,8 +20,8 @@
             <?php endwhile; ?>
             
                 <div id="nav">
-                    <div id="navleft"><?php previous_post_link('%link', '前回の記事'); ?></div>
-                    <div id="navright"><?php next_post_link('%link', '次の記事'); ?></div>
+                    <div id="navleft"><?php next_post_link('%link', '最近のコピー'); ?></div>
+                    <div id="navright"><?php previous_post_link('%link', '過去のコピー'); ?></div>
                 </div>
                 
 <!--この行にコメントタグあった-->            
