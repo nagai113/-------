@@ -9,7 +9,7 @@ Copyright: (c) 2010 WPSHOWER
 License: GNU/GPL Version 2 or later. http://www.gnu.org/licenses/gpl.html
 */
 a:link, a:visited {
-	color:#333;
+	color:#424242;
 	text-decoration:none;
 }
 a:hover {
@@ -36,7 +36,7 @@ caption, th, td {font-weight:strong;text-align:left;}
 
 #outer {
 	font-family:Arial, Helvetica, sans-serif;
-	color:#333;
+	color:#424242;
 	font-size:13px;
 }
 #outer {
