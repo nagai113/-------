@@ -37,7 +37,7 @@ caption, th, td {font-weight:strong;text-align:left;}
 #outer {
 	font-family:Arial, Helvetica, sans-serif;
 	color:#424242;
-	font-size:13px;
+	font-size:15px;
 }
 #outer {
 	width: 959px;
@@ -202,7 +202,7 @@ caption, th, td {font-weight:strong;text-align:left;}
 	background-color:#fcff79;
 }
 .article h2 {
-	font-size:18px;
+	font-size:20px;
 	line-height:1.2;
 	margin-bottom:15px;
 	font-weight:normal;
