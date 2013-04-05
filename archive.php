@@ -2,7 +2,7 @@
                   <?php /* If this is a category archive */ if (is_category()) { ?>
                     <div class="pagetitle"><?php printf(__('&#8216;%s&#8217;'), single_cat_title('', false)); ?></div>
                   <?php /* If this is a tag archive */ } elseif( is_tag() ) { ?>
-                    <div class="pagetitle"><?php printf(__('Posts Tagged &#8216;%s&#8217;'), single_tag_title('', false) ); ?></div>
+                    <div class="pagetitle"><?php printf(__('&#8216;%s&#8217;'), single_tag_title('', false) ); ?></div>
                   <?php /* If this is a daily archive */ } elseif (is_day()) { ?>
                     <div class="pagetitle"><?php printf(_c('%s|Daily archive page'), get_the_time(__('F jS, Y'))); ?></div>
                   <?php /* If this is a monthly archive */ } elseif (is_month()) { ?>
@@ -30,8 +30,8 @@
                         <div><a href="<?php the_permalink() ?>" class="preview"><?php echo "$thumbID"; ?></a></div>
                     	<?php } ?>
 
-                    <h2><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></h2>
-                     <?php the_excerpt(); ?></a>
+                    <h2><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a></h2>
+                                        <?php the_tags(''); ?>
                     <div class="postmetadata">
                         <?php the_time(__('Y年m月d日(D)')) ?>&nbsp;&nbsp;
                     </div>
