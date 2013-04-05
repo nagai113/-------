@@ -8,14 +8,12 @@
                 <div class="article" id="post-<?php the_ID(); ?>">
                       <h1><?php the_title(); ?></h1>
                       <br>
+                <?php the_tags(''); ?>
                       <div class="postmetadata">
                           <?php the_time(__('Y年m月d日(D)')) ?>&nbsp;&nbsp;<?php printf(__('カテゴリー: %s'), get_the_category_list(', ')); ?>&nbsp;&#721;&nbsp;
                       </div>
                       <br>
                       <?php the_content(); ?>
-                      <div class="postmetadata tags">
-					  		<?php the_tags(); ?>
-                      </div>
                 </div>
             <?php endwhile; ?>
             
