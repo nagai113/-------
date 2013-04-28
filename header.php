@@ -51,7 +51,7 @@
         		<?php endif ?>
         	</div>
             <div id="serv">
-            	<div id="search"><!--<?php get_search_form(); ?>--></div>
+            	<div id="search"></div>
                 <div id="navicons">
                 	<ul>
                     	<li><a id="subscribe" href="<?php bloginfo('rss2_url'); ?>" title=""></a></li>
