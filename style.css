@@ -187,7 +187,7 @@ caption, th, td {font-weight:strong;text-align:left;}
 	border:0 none !important;
 }
 #main .article:hover {
-	background-color:#000000;
+	background-color:#fcff79;
 	/*border-left: solid 1px #fcff79;
 	border-right: solid 1px #fcff79;
 	border-bottom: solid 1px #fcff79;*/
@@ -199,7 +199,7 @@ caption, th, td {font-weight:strong;text-align:left;}
 	background-position: left top;
 }
 .li_container .article:hover {
-	background-color:#000000;
+	background-color:#fcff79;
 }
 .article h2 {
 	font-size:38px;
