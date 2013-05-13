@@ -32,7 +32,7 @@
             <?php endwhile; ?>
             <?php else : ?>
             <div id="main">
-                <h1><?php _e("記事が見当たりません…トップに戻ってみましょうか！"); ?></h1>
+                <h1><?php _e("Sorry, but you are looking for something that isn&#8217;t here."); ?></h1>
             </div>
             <?php endif; ?>
 
