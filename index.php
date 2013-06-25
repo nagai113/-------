@@ -41,7 +41,7 @@
             <?php endwhile; ?>
                 <div id="nav">
                     <div id="navleft"><?php previous_posts_link(__('最近のコピー&nbsp;')) ?></div>
-                    <div id="navright"><?php next_posts_link(__('過去のコピー&nbsp;')) ?></div>
+                    <div id="navright"><?php next_posts_link(__('過去もコピー&nbsp;')) ?></div>
                 </div>
             <?php else : ?>
             <?php endif; ?>
