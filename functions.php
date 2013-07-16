@@ -164,7 +164,6 @@ function themeoptions_page()
 add_action('admin_menu', 'themeoptions_admin_menu');
 
 
-
 // Update options function
 
 function themeoptions_update()
