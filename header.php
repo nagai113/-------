@@ -62,7 +62,7 @@
                 <div id="menu">
 				<?php
 				    if ( function_exists( 'wp_nav_menu' ) )
-				        wp_nav_menu( array( 'theme_location' => 'custom-menu','fallback_cb'=> 'custom_menu','container' => 'ul','menu_id' => 'top-menu', ) );
+				        wp_nav_menu( array( 'theme_location' => 'custom-menu','fallback_cb'=> 'custom_menu','container' => 'ul','menu_id' => 'top-menu') );
 				    else 
 				        custom_menu();
 				?>

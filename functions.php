@@ -163,6 +163,59 @@ function themeoptions_page()
 
 add_action('admin_menu', 'themeoptions_admin_menu');
 
+//
+add_action('init', 'my_technic_init');
+function my_technic_init()
+{
+  $labels = array(
+    'name' => _x('WordPress技術情報', 'post type general name'),
+    'singular_name' => _x('WordPress技術情報', 'post type singular name'),
+    'add_new' => _x('新しくWordPress技術の記事を書く', 'wptech'),
+    'add_new_item' => __('WordPress技術の記事を書く'),
+    'edit_item' => __('WordPress技術の記事を編集'),
+    'new_item' => __('新しい記事'),
+    'view_item' => __('記事を見てみる'),
+    'search_items' => __('記事を探す'),
+    'not_found' =>  __('記事はありません'),
+    'not_found_in_trash' => __('ゴミ箱に記事はありません'),
+    'parent_item_colon' => ''
+  );
+  $args = array(
+    'labels' => $labels,
+    'public' => true,
+    'publicly_queryable' => true,
+    'show_ui' => true,
+    'query_var' => true,
+    'rewrite' => true,
+    'capability_type' => 'post',
+    'hierarchical' => false,
+    'menu_position' => 5,
+    'supports' => array('title','editor','thumbnail','custom-fields','excerpt','revisions','page-attributes','comments'),
+    'has_archive' => true
+  );
+  register_post_type('wptech',$args);
+  // カスタムタクソノミーを作成
+ 
+//カテゴリータイプ
+$args = array(
+'label' => 'WPテックカテゴリー',
+'public' => true,
+'show_ui' => true,
+'hierarchical' => true
+);
+register_taxonomy('wptech_category','wptech',$args);
+ 
+//タグタイプ
+$args = array(
+'label' => 'WPテックタグ',
+'public' => true,
+'show_ui' => true,
+'hierarchical' => false
+);
+register_taxonomy('wptech_tag','wptech',$args);
+}
+
+//
 
 // Update options function
 
